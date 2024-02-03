@@ -1,0 +1,32 @@
+______________________________________________________________________________________________________________________________        
+                              When totally on a new PC 
+______________________________________________________________________________________________________________________________
+
+1. The first thing we have to install git on the pc:
+    Download Git for free from the following website: https://www.git-scm.com/
+    ==> Install it on PC
+
+2. Then we need to do, is to check if Git is properly installed:
+    git --version
+    ==> If Git is installed, it should show something like git version X.Y
+
+3. Configure Git:
+    git config --local user.name "your_github_user_name"
+    ==> Press on Enter
+    git config --local user.email "your_github_email_address"
+    ==> Press on Enter
+    
+    [ Note: Use global to set the username and e-mail for every repository on your computer.
+    If you want to set the username/e-mail for just the current repo, you can remove global ]
+
+4. Clone existing Repository:
+    git clone "your_repository_link"
+    ==> Press on Enter
+
+5. Now go to your Repository:
+    cd "your_project_name"
+    ==> Press on Enter
+
+Now write your code in your repository. 
+After Completing the codes when you will commit and push your works, a new tab will open and seek your permission for access.
+Don't worry just give them access. Check out other files to learn Commit and Push.
