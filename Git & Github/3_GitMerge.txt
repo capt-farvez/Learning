@@ -1,0 +1,13 @@
+Works with exixting repository owned by another one and want to works as contributor:
+
+1.  Add git remote to merge with repo
+        git remote add upstream "git link which repository you want to work"
+        --> Press on Enter
+
+2.  fetch upstream
+        git fetch upstream
+        --> Press on Enter
+
+3.  Merge with main
+        git merge upstream/main
+        --> Press on Enter
