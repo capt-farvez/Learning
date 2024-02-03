@@ -1,0 +1,38 @@
+1. Create new Branch:
+    git branch branch_name_you_want_to_create
+    ==> Press on Enter
+
+    Now we created a new branch
+
+2. Let's confirm that we have created a new branch:
+    git branch
+    ==> Press on Enter
+
+    Here you will see all the branch and one will be stared(*), means currently which branch you are on.
+
+3. Moving us from the current branch, to the one specified at the end of the command: (If you need)
+    git checkout branch_name_where_you_want_to_go
+    ==> Press on Enter
+
+    Switched to branch 'branch_you_provided'
+
+4. Now check the status of the current branch:
+    git status
+    ==> Press on Enter
+
+5. If we need to add multiple files to the Staging Environment for this branch:
+    git add --all
+    ==> Press on Enter
+
+    Using --all instead of individual filenames will Stage all changed (new, modified, and deleted) files.
+
+6. We are happy with our changes. So if we need to commit them to the branch:
+    git commit -m "Message whatever you want to write"
+    ==> Press on Enter
+
+7. Emergency Branch:
+    git checkout -b new_brach_name
+    ==> Press on Enter
+
+    Now we have created a new branch from current branch and switched on it, and changed to it.
+    We can safely fix the error and switch on the new branch without disturbing the other branches.
