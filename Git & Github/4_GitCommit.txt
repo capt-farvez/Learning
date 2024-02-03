@@ -1,0 +1,27 @@
+1. Since we have finished our work, we are ready move from stage to commit for our repo.
+    git commit -m "Message whatever you want to write"
+    ==> Press on Enter
+
+2. And check the status of our repository. But this time,
+   we will use the --short option to see the changes in a more compact way:
+    git status --short
+    ==> Press on Enter
+
+    Note: Short status flags are:
+        ?? - Untracked files
+        A - Files added to stage
+        M - Modified files
+        D - Deleted files
+
+3. If we see the file we expected is modified/deleted or something else. So let's commit it directly:
+    git commit -a -m "Message whatever you want to write"
+    ==> Press on Enter
+
+    Warning: Skipping the Staging Environment is not generally recommended.
+    Skipping the stage step can sometimes make you include unwanted changes.
+
+4. Git Commit Log
+    git log
+    ==> Press on Enter
+
+    To view the history of commits for a repository, you can use the log command
