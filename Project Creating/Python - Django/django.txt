@@ -1,0 +1,45 @@
+--> Initial steps for Github :
+    1. While create new repository, check mark on gitignore field and replace any to Python by using search field. 
+        (To ingore upload the virtual environment on github)
+
+
+
+--> Project creation Steps:
+
+    1. Install python extension:
+        check if the python is properly installed with following command 
+	    $   python --version
+
+    2. Open a new terminal in vs code and create a virtual environment by running the following command-
+        $   python -m pip install --upgrade pip
+        $   pip install virtualenv
+        $   python -m venv venv
+
+    3. Then we do run the following command in the terminal. It will run a script to activate the virtual environment-
+	    $ .\venv\Scripts\activate
+
+        Sometimes our systems are disabled to run any scripts.
+            Fix: 
+                1. we need to run the following command in the terminal first-
+                    $ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+                2. Then run the script to activate the virtual environment-
+                    $ .\venv\Scripts\activate
+
+    4. Install Django and Create project and App(if needed):
+        Open the terminal and run the following commands
+	        $ pip install django
+            $ django-admin startproject ProjectName . (do not forget to put the dot at the end)
+                $ django-admin startapp AppName
+
+        To Store information about installed packages (Do it everytime when install a new package)
+            pip freeze > requirements.txt 
+    
+
+    5. To run the server-
+        $ python manage.py runserver
+
+
+--> When try to run the project in another PCs:
+        1. Open the project Directory, then create a venv, and run the following command to install packages(installed on project)
+            $ pip install -r requirements.txt
+
