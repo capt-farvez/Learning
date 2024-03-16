@@ -28,7 +28,7 @@
     4. Install Django and Create project and App(if needed):
         Open the terminal and run the following commands
 	        $ pip install django
-            $ django-admin startproject ProjectName . (do not forget to put the dot at the end)
+            	$ django-admin startproject ProjectName . (do not forget to put the dot at the end)
                 $ django-admin startapp AppName
 
         To Store information about installed packages (Do it everytime when install a new package)
