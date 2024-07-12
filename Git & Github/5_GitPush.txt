@@ -1,0 +1,3 @@
+After Commiting somethig in git, the changing commit should be push into the origin.
+To push the changes in local repository to GitHub.com, run the following command.
+    @ git push origin main
