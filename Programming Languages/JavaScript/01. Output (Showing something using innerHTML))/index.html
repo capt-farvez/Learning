@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+</head>
+<body>
+    <p1 id="sum"></p1>
+    </br>
+    <script> document.getElementById("sum").innerHTML = 10+2   </script>
+    
+    
+    <!-- Get two numbers and print them in HTML -->
+    <form id="numberForm">
+        <label for="number1">Number 1:</label>
+        <input type="text" id="number1" name="number1" step="any" required><br>
+        
+        <label for="number2">Number 2:</label>
+        <input type="number" id="number2" name="number2" required><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <p id="sum2">Sum: </p>
+
+    <script>
+        document.getElementById("numberForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from submitting
+            
+            // Get values of the input fields
+            let n1 = parseFloat(document.getElementById("number1").value);
+            let n2 = parseFloat(document.getElementById("number2").value);
+
+            console.log("Number 1:", n1); // Debugging
+            console.log("Number 2:", n2); // Debugging
+
+            // Calculate the sum
+            let sum = n1 + n2;
+            console.log(sum);
+
+            // Display the sum
+            document.getElementById("sum2").innerHTML = "Sum: " + sum;
+        });
+    </script>
+
+   <script> window.alert("Show an alert using javasccript")</script> 
+    
+   <script src="./output.js"></script>
+
+
+</body>
+</html>
