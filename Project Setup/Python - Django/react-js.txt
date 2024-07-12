@@ -1,0 +1,18 @@
+--> Node.js and npm or yarn installation is prerequisite. If not installed, simply download from node official site and install in machine.
+
+--> To check that node and npx is installed or not, simply go to the terminal and enter:
+        $ node -v
+        $ npm -v 
+        (Ensure that the node and npx is installed with the latest version)
+
+--> To create a new react Project, simply use:
+        @ npm create vite@latest
+        * Now answer some question:
+                1. Ok to proceed?       --> Enter 'y'
+                2. Project name.        --> Type and Enter
+                3. Select a framework.  --> React
+                4. Selet a variant.     --> selet javaScript/typeScript/javaScript + SWC as required
+        After this, simply run,
+        1. @ cd "app-name"
+        2. @ npm install
+        3. @ npm run dev
