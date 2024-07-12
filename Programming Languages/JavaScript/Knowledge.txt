@@ -1,0 +1,53 @@
+The JavaScript syntax defines two types of values:
+    1. Literals: Fixed values (Fixed values are called Literals.)
+    2. Variables: Variable values means dymanic values can be change anytime are called Variables.
+
+
+Hoisting: Variables defined with var and let are hoisted to the top and can be initialized at any time.
+    EX-1: carName = "Volvo";
+       var carName;
+    It will execcute the result, because javascript hoisted the "var carName" to the top and initialize as like,
+        var carName;
+        carName = undefined;
+
+        carName = "Volvo";
+        var carName;
+
+    EX-2: carName = "Volvo";
+       let carName;
+    It will not Work, because javascript hoisted let but not initialize 
+        let carName;
+
+        carName = "Volvo";
+        let carName;
+
+
+JavaScript Type Operators:
+    1. typeof (Returns the type of a variable)
+    2. instanceof (Returns true if an object is an instance of an object type)
+
+
+Events:
+    <element event="some JavaScript">
+    Example 1:
+    <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+
+    Example 2:
+    <button onclick="this.innerHTML = Date()">The time is?</button>
+
+    JavaScript code is often several lines long. It is more common to see event attributes calling functions:
+    Example 3:
+    <button onclick="displayDate1()">The time is?</button>
+    <script> 
+        function displayDate1(){
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
+
+    Example 4:
+    <button onclick="displayDate2(button)">The time is?</button>
+    <script> 
+        function displayDate1(button){
+            button.innerHTML = Date();
+        }
+    </script>
