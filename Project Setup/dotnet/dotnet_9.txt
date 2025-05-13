@@ -20,10 +20,14 @@
     2. Example Minimal API(Program.cs):
 
         var builder = WebApplication.CreateBuilder(args);
-        var app = builder.Build();
 
+        // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+        builder.Services.AddOpenApi();
         // Register support for MVC-style controllers
         builder.Services.AddControllers();
+        builder.Services.AddEndpointsApiExplorer();
+
+        var app = builder.Build();
 
         // Redirect HTTP requests to HTTPS
         app.UseHttpsRedirection();
