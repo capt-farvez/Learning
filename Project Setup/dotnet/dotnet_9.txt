@@ -100,7 +100,7 @@
 
     5. Update the your Model (Make it Database Ready)
 
-    6. Update the Service to Use Database (Not In-Memory List)
+    6. Update the Service to Use Database (Not In-Memory List) (Optional and not Recommended)
 
         // /Services/CategoryService.cs
         using ecommerce_basic_web_api.Models;
